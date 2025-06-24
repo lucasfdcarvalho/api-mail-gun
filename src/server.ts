@@ -19,7 +19,7 @@ type NodeMail = {
 
 app.register(cors, {
     origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"]
 })
 
