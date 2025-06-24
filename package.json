@@ -1,0 +1,34 @@
+{
+  "name": "api-mail-gun",
+  "version": "1.0.0",
+  "description": "api criada para enviar email com mail gun",
+  "main": "index.js",
+  "engine": {
+    "node": 18
+  },
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfdcarvalho/api-mail-gun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasfdcarvalho/api-mail-gun/issues"
+  },
+  "homepage": "https://github.com/lucasfdcarvalho/api-mail-gun#readme",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.4.0",
+    "form-data": "^4.0.3",
+    "mailgun.js": "^12.0.3",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
