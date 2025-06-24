@@ -33,8 +33,10 @@ const mg = maingun.client({
 
 
 app.post("/send-email", async (request, response) => {
-    const { from, to, subject, text, html } = request.body as NodeMail
+    const { to, subject, text, html } = request.body as NodeMail
     const domain = process.env.MAILGUN_DOMAIN || ""
+
+    const from = `postmaster@${domain}`;
 
     const mailOptions = {
         from,
